@@ -1,0 +1,32 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dashujv"
+        xmlns:dxnav="http://schemas.devexpress.com/winfx/2008/xaml/navigation" xmlns:Custom="http://schemas.devexpress.com/winfx/2008/xaml/charts/rangecontrolclient" xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui" x:Class="Dashujv.着色机"
+        mc:Ignorable="d"
+        Title="着色机" Height="458.074" Width="735.127">
+    <!--<Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="201*"/>
+            <RowDefinition Height="226*"/>
+        </Grid.RowDefinitions>-->
+    <DockPanel>
+        
+        <dxnav:TileBar VerticalAlignment="Top" Background="#FFE8E8E8" DockPanel.Dock="Top">
+            <dxnav:TileBarItem x:Name="着色机1" Content="着色机1" Background="#FF00879C" Click="着色机1_Click"/>
+            <dxnav:TileBarItem  Content="着色机2" Background="#FF404040"/>
+            <dxnav:TileBarItem  Content="着色机3" Background="#FFCC6D00"/>
+            <dxnav:TileBarItem  Content="着色机4" Background="#FF0073C4"/>
+            <dxnav:TileBarItem Content="着色机5" Background="#FF00879C"/>
+            <dxnav:TileBarItem  Content="着色机6" Background="#FF404040"/>
+            <dxnav:TileBarItem  Content="着色机7" Background="#FFCC6D00"/>
+            <dxnav:TileBarItem  Content="着色机8" Background="#FF0073C4"/>
+        </dxnav:TileBar>
+
+        <dxwui:NavigationFrame x:Name="frame1" Content="NavigationFrame"  RenderTransformOrigin="0.5,0.5" Background="#FFE61717" DockPanel.Dock="Bottom" AnimationType="SlideHorizontal">
+            
+        </dxwui:NavigationFrame>
+        </DockPanel>
+</Window>

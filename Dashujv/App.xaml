@@ -1,0 +1,9 @@
+﻿<Application x:Class="Dashujv.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Dashujv"
+             StartupUri="着色机.xaml">
+    <Application.Resources>
+        <BitmapImage x:Key="ImageSource1" >Images/2-01.jpg</BitmapImage>
+    </Application.Resources>
+</Application>

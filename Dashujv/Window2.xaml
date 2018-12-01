@@ -1,0 +1,489 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dashujv"
+        xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts" xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" x:Class="Dashujv.Window2"
+        mc:Ignorable="d"
+        Title="Window2" Height="411.331" Width="687.535" Loaded="Window_Loaded">
+    <Window.Background>
+        <ImageBrush ImageSource="Images/1.jpg"/>
+    </Window.Background>
+
+    <Viewbox Stretch=" fill">
+        <Canvas  Width="547" Height="371">
+
+            <dxc:ChartControl x:Name="chart1" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Height="81" Background="{x:Null}" Grid.ColumnSpan="2" Canvas.Left="167" Canvas.Top="280">
+                <dxc:ChartControl.Legend>
+                    <dxc:Legend Visible="False"/>
+                </dxc:ChartControl.Legend>
+                <dxc:XYDiagram2D Rotated="True" Margin="0,0,0,-32">
+                    <dxc:XYDiagram2D.AxisX>
+                        <dxc:AxisX2D Reverse="False"/>
+                    </dxc:XYDiagram2D.AxisX>
+                    <dxc:XYDiagram2D.DefaultPane>
+                        <dxc:Pane DomainBrush="{x:Null}"/>
+                    </dxc:XYDiagram2D.DefaultPane>
+                    <dxc:BarStackedSeries2D DisplayName="系列 1">
+                        <dxc:SeriesPoint Argument="1" Value="6.5"/>
+                        <dxc:SeriesPoint Argument="2" Value="5.5"/>
+                        <dxc:SeriesPoint Argument="3" Value="12.5"/>
+                        <dxc:SeriesPoint Argument="4" Value="11.5"/>
+                        <dxc:SeriesPoint Argument="5" Value="18.5"/>
+                    </dxc:BarStackedSeries2D>
+                </dxc:XYDiagram2D>
+            </dxc:ChartControl>
+            <Grid Height="53" Width="186" Canvas.Left="187" Canvas.Top="144" Name="grid2">
+                <Label x:Name="label3" Content="着色机产线3台设备出现异常&#xA;套塑产线3台设备出现异常&#xA;成缆产线3台设备出现异常&#xA;加强筋产线3台设备出现异常&#xA;填充绳产线3台设备出现异常&#xA;护套产线3台设备出现异常"  HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Bottom"  Foreground="#FFFB2611" FontSize="6" Height="43" Width="186" Canvas.Left="187" Canvas.Top="169"/>
+            </Grid>
+            <Label x:Name="label" Content="着色机" Canvas.Left="14" Canvas.Top="14" Foreground="#FF12B7F5" Width="109" Height="22" FontSize="9"/>
+            <Label x:Name="label95" Content="产量趋势图" Canvas.Top="29" Foreground="#FF12B7F5" Width="109" Height="22" Canvas.Left="80" FontSize="11"/>
+
+            <Label x:Name="label6" Content="套塑" Canvas.Left="18" Canvas.Top="129" Foreground="#FF12B7F5" Height="26" Width="60" FontSize="9"/>
+            <Label x:Name="label106" Content="成缆" Canvas.Left="18" Canvas.Top="245" Foreground="#FF12B7F5" Height="23" Width="60" FontSize="9"/>
+            <Label x:Name="label7" Content="装载量/合格率分布" Canvas.Left="154" Canvas.Top="210" Foreground="#FF12B7F5" Height="9" Width="116"/>
+            <Label x:Name="label8" Content="质量控制" Canvas.Left="178" Canvas.Top="197" Foreground="#FF12B7F5" Height="33" Width="92" FontSize="9"/>
+            <Label x:Name="label108" Content="苏北光缆大数据中心" Canvas.Left="223" Canvas.Top="10" Foreground="#FFEDF4F7" Height="29" Width="109" FontSize="9" Background="{x:Null}" FontFamily="Arial Black"/>
+            <Label x:Name="labe88" Content="人员绩效" Canvas.Left="178" Canvas.Top="280" Foreground="#FF12B7F5" Height="20" Width="56" FontSize="9"/>
+            <Label x:Name="label9" Content="填充绳" Canvas.Left="383" Canvas.Top="129" Foreground="#FF12B7F5" Height="21" Width="59" FontSize="9"/>
+            <Label x:Name="label20" Content="加强筋" Canvas.Left="378" Canvas.Top="14" Foreground="#FF12B7F5" Height="20" Width="76" FontSize="9"/>
+            <Label x:Name="label129" Content="护套" Canvas.Left="378" Canvas.Top="245" Foreground="#FF12B7F5" Height="23" Width="76" FontSize="9"/>
+            <Label x:Name="label21" Content="报警信息" Canvas.Left="178" Canvas.Top="113" Foreground="#FF12B7F5" Height="26" Width="56" FontSize="9"/>
+            <Label x:Name="label81" Content="设备运行状态" Canvas.Left="178" Canvas.Top="29" Foreground="#FF12B7F5" Height="25" Width="73" FontSize="9"/>
+            <Label x:Name="label10" Content="计划产量" Canvas.Left="15" Canvas.Top="39" Width="44" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label11" Content="当日产量" Canvas.Left="15" Canvas.Top="53" Width="44" Height="23" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label12" Content="实际产量" Canvas.Left="15" Canvas.Top="64" Width="44" Height="22" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label13" Content="月度产量" Canvas.Left="15" Canvas.Top="76" Width="44" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label14" Content="1000" Canvas.Left="45" Canvas.Top="39" Width="29" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label15" Content="700" Canvas.Left="45" Canvas.Top="53" Width="29" Height="18" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label16" Content="800" Canvas.Left="45" Canvas.Top="64" Width="29" Height="18" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label19" Content="计划产量" Canvas.Left="18" Canvas.Top="159" Width="44" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label22" Content="当日产量" Canvas.Left="18" Canvas.Top="169" Width="44" Height="23" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label23" Content="实际产量" Canvas.Left="18" Canvas.Top="179" Width="44" Height="22" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label24" Content="月度产量" Canvas.Left="18" Canvas.Top="189" Width="44" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label25" Content="1000" Canvas.Left="54" Canvas.Top="159" Width="29" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label26" Content="700" Canvas.Left="54" Canvas.Top="169" Width="29" Height="18" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label27" Content="800" Canvas.Left="54" Canvas.Top="179" Width="29" Height="18" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label28" Content="1000" Canvas.Left="54" Canvas.Top="189" Width="29" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label29" Content="500" Canvas.Left="45" Canvas.Top="76" Width="29" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label30" Content="计划产量" Canvas.Left="18" Canvas.Top="280" Width="44" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label31" Content="当日产量" Canvas.Left="18" Canvas.Top="290" Width="44" Height="23" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label32" Content="实际产量" Canvas.Left="18" Canvas.Top="300" Width="44" Height="22" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label33" Content="月度产量" Canvas.Left="18" Canvas.Top="310" Width="44" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label34" Content="1000" Canvas.Left="54" Canvas.Top="280" Width="29" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label35" Content="700" Canvas.Left="54" Canvas.Top="290" Width="29" Height="18" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label36" Content="800" Canvas.Left="54" Canvas.Top="300" Width="29" Height="18" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label37" Content="500" Canvas.Left="54" Canvas.Top="310" Width="29" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label40" Content="计划产量" Canvas.Left="388" Canvas.Top="280" Width="44" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label41" Content="当日产量" Canvas.Left="388" Canvas.Top="290" Width="44" Height="23" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label42" Content="实际产量" Canvas.Left="388" Canvas.Top="300" Width="44" Height="22" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label43" Content="月度产量" Canvas.Left="388" Canvas.Top="310" Width="44" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label44" Content="1000" Canvas.Left="418" Canvas.Top="280" Width="29" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label45" Content="700" Canvas.Left="418" Canvas.Top="290" Width="29" Height="18" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label46" Content="800" Canvas.Left="418" Canvas.Top="300" Width="29" Height="18" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label47" Content="500" Canvas.Left="418" Canvas.Top="310" Width="29" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label69" Content="计划产量" Canvas.Left="388" Canvas.Top="159" Width="44" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label62" Content="当日产量" Canvas.Left="388" Canvas.Top="169" Width="44" Height="23" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label63" Content="实际产量" Canvas.Left="388" Canvas.Top="179" Width="44" Height="22" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label64" Content="月度产量" Canvas.Left="388" Canvas.Top="189" Width="44" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label65" Content="1000" Canvas.Left="418" Canvas.Top="159" Width="29" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label66" Content="700" Canvas.Left="418" Canvas.Top="169" Width="29" Height="18" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label67" Content="800" Canvas.Left="418" Canvas.Top="179" Width="29" Height="18" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label169" Content="500" Canvas.Left="418" Canvas.Top="189" Width="29" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label89" Content="计划产量" Canvas.Left="388" Canvas.Top="39" Width="44" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label72" Content="当日产量" Canvas.Left="388" Canvas.Top="49" Width="44" Height="23" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label73" Content="实际产量" Canvas.Left="388" Canvas.Top="59" Width="44" Height="22" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label74" Content="月度产量" Canvas.Left="388" Canvas.Top="69" Width="44" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label75" Content="1000" Canvas.Left="420" Canvas.Top="39" Width="29" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label76" Content="700" Canvas.Left="420" Canvas.Top="49" Width="29" Height="18" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label77" Content="800" Canvas.Left="420" Canvas.Top="59" Width="29" Height="18" Foreground="#FF26FDE0" FontSize="6"/>
+            <Label x:Name="label179" Content="500" Canvas.Left="420" Canvas.Top="69" Width="29" Height="20" Foreground="#FF26FDE0" FontSize="6"/>
+            <dxc:ChartControl Canvas.Left="36" Canvas.Top="53" Height="82" Background="{x:Null}" Width="153" AnimationMode="Disabled" ToolTipEnabled="{x:Null}">
+                <dxc:ChartControl.Palette>
+                    <dxc:ChameleonPalette/>
+                </dxc:ChartControl.Palette>
+                <dxc:ChartControl.Legend>
+                    <dxc:Legend Visible="False"/>
+                </dxc:ChartControl.Legend>
+                <dxc:XYDiagram2D Margin="0,-13" Background="Transparent" FontSize="8" Width="124" EnableAxisXNavigation="False" BarDistance="0" EqualBarWidth="False" PaneOrientation="Vertical" >
+                    <dxc:XYDiagram2D.AxisX>
+                        <dxc:AxisX2D Visible="True" GridLinesBrush="#FF3A37FA" GridLinesMinorBrush="#FF265BFC" GridLinesVisible="False" GridLinesMinorVisible="False" MinorCount="12" LogarithmicBase="4" TickmarksVisible="False" TickmarksMinorVisible="False" Brush="{x:Null}">
+                            <dxc:AxisX2D.Label>
+                                <dxc:AxisLabel Foreground="#FFF0D718" FontSize="8" Angle="0" Staggered="False" FontFamily="#GLOBAL USER INTERFACE" Background="#FFF2E6E6"/>
+                            </dxc:AxisX2D.Label>
+                        </dxc:AxisX2D>
+                    </dxc:XYDiagram2D.AxisX>
+                    <dxc:XYDiagram2D.DefaultPane>
+                        <dxc:Pane DomainBrush="{x:Null}" MirrorHeight="1"/>
+                    </dxc:XYDiagram2D.DefaultPane>
+                    <dxc:AreaStackedSeries2D DisplayName="系列 2" LabelsVisibility="False" ShowInLegend="True" Visible="True" ToolTipEnabled="True" CrosshairEnabled="True" CrosshairLabelVisibility="True" Brush="DodgerBlue">
+                        <dxc:SeriesPoint Argument="1" Value="5"/>
+                        <dxc:SeriesPoint Argument="2" Value="7"/>
+                        <dxc:SeriesPoint Argument="3" Value="4"/>
+                        <dxc:SeriesPoint Argument="4" Value="8"/>
+                        <dxc:SeriesPoint Argument="5" Value="2"/>
+                        <dxc:SeriesPoint Argument="6" Value="9"/>
+                        <dxc:SeriesPoint Argument="7" Value="6"/>
+                        <dxc:SeriesPoint Argument="8" Value="5"/>
+                        <dxc:SeriesPoint Argument="9" Value="9.4"/>
+                        <dxc:SeriesPoint Argument="10" Value="10.8"/>
+                        <dxc:SeriesPoint Argument="11" Value="4.8"/>
+                        <dxc:SeriesPoint Argument="12" Value="3"/>
+                        <dxc:SeriesPoint Argument="13" Value="2.7" Brush="Black"/>
+                        <dxc:SeriesPoint Argument="14" Value="11"/>
+                        <dxc:SeriesPoint Argument="15" Value="13"/>
+                        <dxc:SeriesPoint Argument="16" Value="15"/>
+                        <dxc:SeriesPoint Argument="17" Value="11"/>
+                        <dxc:SeriesPoint Argument="18" Value="8.3"/>
+                        <dxc:SeriesPoint Argument="19" Value="6.7"/>
+                        <dxc:SeriesPoint Argument="20" Value="5"/>
+                        <dxc:SeriesPoint Argument="21" Value="6"/>
+                        <dxc:SeriesPoint Argument="22" Value="7.9"/>
+                        <dxc:SeriesPoint Argument="23" Value="10"/>
+                    </dxc:AreaStackedSeries2D>
+                    <dxc:LineSeries2D DisplayName="系列 2" Brush="#FFE46541">
+                        <dxc:SeriesPoint Argument="1" Value="6.5"/>
+                        <dxc:SeriesPoint Argument="2" Value="5.5"/>
+                        <dxc:SeriesPoint Argument="3" Value="6"/>
+                        <dxc:SeriesPoint Argument="4" Value="7"/>
+                        <dxc:SeriesPoint Argument="5" Value="18.5"/>
+                        <dxc:SeriesPoint Argument="6" Value="12"/>
+                        <dxc:SeriesPoint Argument="7" Value="15"/>
+                        <dxc:SeriesPoint Argument="8" Value="14"/>
+                        <dxc:SeriesPoint Argument="9" Value="17"/>
+                        <dxc:SeriesPoint Argument="10" Value="11"/>
+                        <dxc:SeriesPoint Argument="11" Value="8"/>
+                        <dxc:SeriesPoint Argument="12" Value="17"/>
+                        <dxc:SeriesPoint Argument="13" Value="12"/>
+                        <dxc:SeriesPoint Argument="14" Value="13"/>
+                        <dxc:SeriesPoint Argument="15" Value="12"/>
+                        <dxc:SeriesPoint Argument="16" Value="12"/>
+                        <dxc:SeriesPoint Argument="17" Value="11"/>
+                        <dxc:SeriesPoint Argument="18" Value="10"/>
+                        <dxc:SeriesPoint Argument="19" Value="9"/>
+                        <dxc:SeriesPoint Argument="20" Value="8"/>
+                        <dxc:SeriesPoint Argument="21" Value="8.2"/>
+                        <dxc:SeriesPoint Argument="22" Value="8.4"/>
+                        <dxc:SeriesPoint Argument="23" Value="8.6"/>
+                    </dxc:LineSeries2D>
+                </dxc:XYDiagram2D>
+            </dxc:ChartControl>
+            <dxc:ChartControl x:Name="chart2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="93" Height="81" Background="{x:Null}" Canvas.Left="239" Canvas.Top="280">
+                <dxc:ChartControl.Legend>
+                    <dxc:Legend Visible="False"/>
+                </dxc:ChartControl.Legend>
+                <dxc:XYDiagram2D Rotated="True" Margin="0,0,0,-32">
+                    <dxc:XYDiagram2D.AxisX>
+                        <dxc:AxisX2D Reverse="False"/>
+                    </dxc:XYDiagram2D.AxisX>
+                    <dxc:XYDiagram2D.DefaultPane>
+                        <dxc:Pane DomainBrush="{x:Null}"/>
+                    </dxc:XYDiagram2D.DefaultPane>
+                    <dxc:BarStackedSeries2D DisplayName="系列 1">
+                        <dxc:SeriesPoint Argument="1" Value="6.5"/>
+                        <dxc:SeriesPoint Argument="2" Value="5.5"/>
+                        <dxc:SeriesPoint Argument="3" Value="12.5"/>
+                        <dxc:SeriesPoint Argument="4" Value="11.5"/>
+                        <dxc:SeriesPoint Argument="5" Value="18.5"/>
+                    </dxc:BarStackedSeries2D>
+                </dxc:XYDiagram2D>
+            </dxc:ChartControl>
+            <dxc:ChartControl x:Name="chart3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="89" Height="81" Background="{x:Null}" Canvas.Left="298" Canvas.Top="280">
+                <dxc:ChartControl.Legend>
+                    <dxc:Legend Visible="False"/>
+                </dxc:ChartControl.Legend>
+                <dxc:XYDiagram2D Rotated="True" Margin="0,0,0,-32">
+                    <dxc:XYDiagram2D.AxisX>
+                        <dxc:AxisX2D Reverse="False"/>
+                    </dxc:XYDiagram2D.AxisX>
+                    <dxc:XYDiagram2D.DefaultPane>
+                        <dxc:Pane DomainBrush="{x:Null}"/>
+                    </dxc:XYDiagram2D.DefaultPane>
+                    <dxc:BarStackedSeries2D DisplayName="系列 1">
+                        <dxc:SeriesPoint Argument="1" Value="6.5"/>
+                        <dxc:SeriesPoint Argument="2" Value="5.5"/>
+                        <dxc:SeriesPoint Argument="3" Value="12.5"/>
+                        <dxc:SeriesPoint Argument="4" Value="11.5"/>
+                        <dxc:SeriesPoint Argument="5" Value="18.5"/>
+                    </dxc:BarStackedSeries2D>
+                </dxc:XYDiagram2D>
+            </dxc:ChartControl>
+            <dxc:ChartControl Canvas.Left="178" Canvas.Top="44" Background="{x:Null}" Height="72" Width="195" RenderTransformOrigin="0.551,0.518" ToolTipEnabled="False">
+                <dxc:ChartControl.IndicatorsPalette>
+                    <dxc:CustomIndicatorsPalette/>
+                </dxc:ChartControl.IndicatorsPalette>
+                <dxc:ChartControl.Legend>
+                    <dxc:Legend Visible="True" ReverseItems="False" IndentFromDiagram="0" Foreground="#FFB66A4E" Background="{x:Null}" FontSize="4" Margin="0,-3,-6,-2" Padding="2,-1,-7,0" Opacity="0.8" BorderBrush="#3F25539C"/>
+                </dxc:ChartControl.Legend>
+                <dxc:XYDiagram2D Margin="0,-12,0,-15"   Background="{x:Null}" Opacity="0.95"  EqualBarWidth="False" Width="145">
+                    <dxc:XYDiagram2D.AxisX>
+                        <dxc:AxisX2D Visible="True">
+                            <dxc:AxisX2D.Label>
+                                <dxc:AxisLabel Staggered="False" FontSize="3" Foreground="#FFC4ED0C"/>
+                            </dxc:AxisX2D.Label>
+                        </dxc:AxisX2D>
+                    </dxc:XYDiagram2D.AxisX>
+                    <dxc:XYDiagram2D.DefaultPane>
+                        <dxc:Pane DomainBrush="{x:Null}"/>
+                    </dxc:XYDiagram2D.DefaultPane>
+                    <dxc:BarStackedSeries2D DisplayName="停止">
+                        <dxc:SeriesPoint Argument="着色机" Value="5"/>
+                        <dxc:SeriesPoint Argument="套塑" Value="5"/>
+                        <dxc:SeriesPoint Argument="成缆" Value="5"/>
+                        <dxc:SeriesPoint Argument="加强筋" Value="5"/>
+                        <dxc:SeriesPoint Argument="填充绳" Value="7"/>
+                        <dxc:SeriesPoint Argument="护套" Value="4"/>
+                        <dxc:SeriesPoint/>
+                        <dxc:SeriesPoint/>
+                    </dxc:BarStackedSeries2D>
+                    <dxc:BarStackedSeries2D DisplayName="运行">
+                        <dxc:SeriesPoint Argument="着色机" Value="6.5"/>
+                        <dxc:SeriesPoint Argument="套塑" Value="5.5"/>
+                        <dxc:SeriesPoint Argument="成缆" Value="12.5"/>
+                        <dxc:SeriesPoint Argument="加强筋" Value="11.5"/>
+                        <dxc:SeriesPoint Argument="填充绳" Value="18.5"/>
+                        <dxc:SeriesPoint Argument="护套" Value="10"/>
+                    </dxc:BarStackedSeries2D>
+                </dxc:XYDiagram2D>
+            </dxc:ChartControl>
+            <dxc:ChartControl Canvas.Left="187" Canvas.Top="210" Width="175" Height="70" Background="{x:Null}">
+                <dxc:ChartControl.Palette>
+                    <dxc:ChameleonPalette/>
+                </dxc:ChartControl.Palette>
+                <dxc:ChartControl.Legend>
+                    <dxc:Legend Visible="False"/>
+                </dxc:ChartControl.Legend>
+                <dxc:RadarDiagram2D Margin="0,-34,0,-32" DomainBrush="{x:Null}">
+                    <dxc:RadarAreaSeries2D Brush="#FFBFE33D">
+                        <dxc:SeriesPoint Argument="1" Value="3"/>
+                        <dxc:SeriesPoint Argument="2" Value="2"/>
+                        <dxc:SeriesPoint Argument="3" Value="4"/>
+                        <dxc:SeriesPoint Argument="4" Value="1"/>
+                        <dxc:SeriesPoint Argument="5" Value="3"/>
+                        <dxc:SeriesPoint Argument="6" Value="4"/>
+                    </dxc:RadarAreaSeries2D>
+                </dxc:RadarDiagram2D>
+            </dxc:ChartControl>
+            <dxc:ChartControl Canvas.Left="36" Canvas.Top="159" Height="89" Background="{x:Null}" Width="146">
+                <dxc:ChartControl.Legend>
+                    <dxc:Legend Visible="False"/>
+                </dxc:ChartControl.Legend>
+                <dxc:XYDiagram2D Margin="0,0,0,-22" >
+                    <dxc:XYDiagram2D.DefaultPane>
+                        <dxc:Pane DomainBrush="{x:Null}"/>
+                    </dxc:XYDiagram2D.DefaultPane>
+                    <dxc:BarSideBySideSeries2D DisplayName="系列 2" Brush="#FF1B8CEA">
+                        <dxc:SeriesPoint Argument="1" Value="5"/>
+                        <dxc:SeriesPoint Argument="2" Value="7"/>
+                        <dxc:SeriesPoint Argument="3" Value="4"/>
+                        <dxc:SeriesPoint Argument="4" Value="8"/>
+                        <dxc:SeriesPoint Argument="5" Value="2"/>
+                        <dxc:SeriesPoint Argument="6" Value="9"/>
+                        <dxc:SeriesPoint Argument="7" Value="6"/>
+                        <dxc:SeriesPoint Argument="8" Value="5"/>
+                        <dxc:SeriesPoint Argument="9" Value="9.4"/>
+                        <dxc:SeriesPoint Argument="10" Value="10.8"/>
+                        <dxc:SeriesPoint Argument="11" Value="4.8"/>
+                        <dxc:SeriesPoint Argument="12" Value="3"/>
+                        <dxc:SeriesPoint Argument="13" Value="2.7"/>
+                        <dxc:SeriesPoint Argument="14" Value="11"/>
+                        <dxc:SeriesPoint Argument="15" Value="13"/>
+                        <dxc:SeriesPoint Argument="16" Value="15"/>
+                        <dxc:SeriesPoint Argument="17" Value="11"/>
+                        <dxc:SeriesPoint Argument="18" Value="8.3"/>
+                        <dxc:SeriesPoint Argument="19" Value="6.7"/>
+                    </dxc:BarSideBySideSeries2D>
+                </dxc:XYDiagram2D>
+            </dxc:ChartControl>
+            <dxc:ChartControl Canvas.Left="36" Canvas.Top="271" Height="84" Background="{x:Null}" Width="146">
+                <dxc:ChartControl.Palette>
+                    <dxc:ChameleonPalette/>
+                </dxc:ChartControl.Palette>
+                <dxc:ChartControl.Legend>
+                    <dxc:Legend Visible="False"/>
+                </dxc:ChartControl.Legend>
+                <dxc:XYDiagram2D Margin="0,-8,0,-22" >
+                    <dxc:XYDiagram2D.DefaultPane>
+                        <dxc:Pane DomainBrush="{x:Null}"/>
+                    </dxc:XYDiagram2D.DefaultPane>
+                    <dxc:BarSideBySideSeries2D DisplayName="Series 1"/>
+                    <dxc:LineSeries2D DisplayName="系列 2">
+                        <dxc:SeriesPoint Argument="1" Value="5"/>
+                        <dxc:SeriesPoint Argument="2" Value="7"/>
+                        <dxc:SeriesPoint Argument="3" Value="4"/>
+                        <dxc:SeriesPoint Argument="4" Value="8"/>
+                        <dxc:SeriesPoint Argument="5" Value="2"/>
+                        <dxc:SeriesPoint Argument="6" Value="9"/>
+                        <dxc:SeriesPoint Argument="7" Value="6"/>
+                        <dxc:SeriesPoint Argument="8" Value="5"/>
+                        <dxc:SeriesPoint Argument="9" Value="9.4"/>
+                        <dxc:SeriesPoint Argument="10" Value="10.8"/>
+                        <dxc:SeriesPoint Argument="11" Value="4.8"/>
+                        <dxc:SeriesPoint Argument="12" Value="3"/>
+                        <dxc:SeriesPoint Argument="13" Value="2.7"/>
+                        <dxc:SeriesPoint Argument="14" Value="11"/>
+                        <dxc:SeriesPoint Argument="15" Value="13"/>
+                        <dxc:SeriesPoint Argument="16" Value="15"/>
+                        <dxc:SeriesPoint Argument="17" Value="11"/>
+                        <dxc:SeriesPoint Argument="18" Value="8.3"/>
+                        <dxc:SeriesPoint Argument="19" Value="6.7"/>
+                        <dxc:SeriesPoint Argument="20" Value="5"/>
+                        <dxc:SeriesPoint Argument="21" Value="6"/>
+                        <dxc:SeriesPoint Argument="22" Value="7.9"/>
+                        <dxc:SeriesPoint Argument="23" Value="10"/>
+                    </dxc:LineSeries2D>
+                </dxc:XYDiagram2D>
+            </dxc:ChartControl>
+            <dxc:ChartControl Canvas.Left="399" Canvas.Top="267" Height="94" Background="{x:Null}" Width="159">
+                <dxc:ChartControl.Palette>
+                    <dxc:ChameleonPalette/>
+                </dxc:ChartControl.Palette>
+                <dxc:ChartControl.Legend>
+                    <dxc:Legend Visible="False"/>
+                </dxc:ChartControl.Legend>
+                <dxc:XYDiagram2D Margin="0,0,0,-13" >
+                    <dxc:XYDiagram2D.AxisX>
+                        <dxc:AxisX2D TickmarksLength="1" TickmarksMinorLength="3" Thickness="0" LogarithmicBase="4"/>
+                    </dxc:XYDiagram2D.AxisX>
+                    <dxc:XYDiagram2D.DefaultPane>
+                        <dxc:Pane DomainBrush="{x:Null}"/>
+                    </dxc:XYDiagram2D.DefaultPane>
+                    <dxc:BarSideBySideSeries2D DisplayName="Series 1"/>
+                    <dxc:AreaStackedSeries2D DisplayName="系列 2">
+                        <dxc:SeriesPoint Argument="1" Value="5"/>
+                        <dxc:SeriesPoint Argument="2" Value="7"/>
+                        <dxc:SeriesPoint Argument="3" Value="4"/>
+                        <dxc:SeriesPoint Argument="4" Value="8"/>
+                        <dxc:SeriesPoint Argument="5" Value="2"/>
+                        <dxc:SeriesPoint Argument="6" Value="9"/>
+                        <dxc:SeriesPoint Argument="7" Value="6"/>
+                        <dxc:SeriesPoint Argument="8" Value="5"/>
+                        <dxc:SeriesPoint Argument="9" Value="9.4"/>
+                        <dxc:SeriesPoint Argument="10" Value="10.8"/>
+                        <dxc:SeriesPoint Argument="11" Value="4.8"/>
+                        <dxc:SeriesPoint Argument="12" Value="3"/>
+                        <dxc:SeriesPoint Argument="13" Value="2.7"/>
+                        <dxc:SeriesPoint Argument="14" Value="11"/>
+                        <dxc:SeriesPoint Argument="15" Value="13"/>
+                        <dxc:SeriesPoint Argument="16" Value="15"/>
+                        <dxc:SeriesPoint Argument="17" Value="11"/>
+                        <dxc:SeriesPoint Argument="18" Value="8.3"/>
+                        <dxc:SeriesPoint Argument="19" Value="6.7"/>
+                    </dxc:AreaStackedSeries2D>
+                </dxc:XYDiagram2D>
+            </dxc:ChartControl>
+            <Border BorderBrush="Black" BorderThickness="1" Height="100" Canvas.Left="-401" Canvas.Top="71" Width="100"/>
+            <Label x:Name="label95_Copy" Content="产量趋势图" Canvas.Top="150" Foreground="#FF12B7F5" Width="109" Height="24" Canvas.Left="80" FontSize="11"/>
+            <Label x:Name="label95_Copy1" Content="产量趋势图" Canvas.Top="267" Foreground="#FF12B7F5" Width="109" Height="28" Canvas.Left="80" FontSize="11"/>
+            <Label x:Name="label95_Copy2" Content="产量趋势图" Canvas.Top="29" Foreground="#FF12B7F5" Width="68" Height="22" Canvas.Left="459" FontSize="11"/>
+            <Label x:Name="label95_Copy3" Content="产量趋势图" Canvas.Top="150" Foreground="#FF12B7F5" Width="68" Height="29" Canvas.Left="459" FontSize="11"/>
+            <Label x:Name="label95_Copy4" Content="产量趋势图" Canvas.Top="267" Foreground="#FF12B7F5" Width="68" Height="28" Canvas.Left="459" FontSize="11"/>
+            <Label x:Name="label1" Content="" Canvas.Left="239" Canvas.Top="49" Height="23" Width="68" FontSize="5" Foreground="#FFF5F3F3"/>
+            <dxc:ChartControl Canvas.Left="388" Canvas.Top="53" Height="82" Background="{x:Null}" Width="149" AnimationMode="Disabled" ToolTipEnabled="{x:Null}">
+                <dxc:ChartControl.Palette>
+                    <dxc:ChameleonPalette/>
+                </dxc:ChartControl.Palette>
+                <dxc:ChartControl.Legend>
+                    <dxc:Legend Visible="False"/>
+                </dxc:ChartControl.Legend>
+                <dxc:XYDiagram2D Margin="0,-13" Background="Transparent" FontSize="8" EnableAxisXNavigation="False" BarDistance="0" EqualBarWidth="False" PaneOrientation="Vertical" Width="119" >
+                    <dxc:XYDiagram2D.AxisX>
+                        <dxc:AxisX2D Visible="True" GridLinesBrush="#FF3A37FA" GridLinesMinorBrush="#FF265BFC" GridLinesVisible="False" GridLinesMinorVisible="False" MinorCount="12" LogarithmicBase="4" TickmarksVisible="False" TickmarksMinorVisible="False" Brush="{x:Null}">
+                            <dxc:AxisX2D.Label>
+                                <dxc:AxisLabel Foreground="#FFF0D718" FontSize="8" Angle="0" Staggered="False" FontFamily="#GLOBAL USER INTERFACE" Background="#FFF2E6E6"/>
+                            </dxc:AxisX2D.Label>
+                        </dxc:AxisX2D>
+                    </dxc:XYDiagram2D.AxisX>
+                    <dxc:XYDiagram2D.DefaultPane>
+                        <dxc:Pane DomainBrush="{x:Null}" MirrorHeight="1"/>
+                    </dxc:XYDiagram2D.DefaultPane>
+                    <dxc:AreaStackedSeries2D DisplayName="系列 2" LabelsVisibility="False" ShowInLegend="True" Visible="True" ToolTipEnabled="True" CrosshairEnabled="True" CrosshairLabelVisibility="True" Brush="DodgerBlue">
+                        <dxc:SeriesPoint Argument="1" Value="5"/>
+                        <dxc:SeriesPoint Argument="2" Value="7"/>
+                        <dxc:SeriesPoint Argument="3" Value="4"/>
+                        <dxc:SeriesPoint Argument="4" Value="8"/>
+                        <dxc:SeriesPoint Argument="5" Value="2"/>
+                        <dxc:SeriesPoint Argument="6" Value="9"/>
+                        <dxc:SeriesPoint Argument="7" Value="6"/>
+                        <dxc:SeriesPoint Argument="8" Value="5"/>
+                        <dxc:SeriesPoint Argument="9" Value="9.4"/>
+                        <dxc:SeriesPoint Argument="10" Value="10.8"/>
+                        <dxc:SeriesPoint Argument="11" Value="4.8"/>
+                        <dxc:SeriesPoint Argument="12" Value="3"/>
+                        <dxc:SeriesPoint Argument="13" Value="2.7" Brush="Black"/>
+                        <dxc:SeriesPoint Argument="14" Value="11"/>
+                        <dxc:SeriesPoint Argument="15" Value="13"/>
+                        <dxc:SeriesPoint Argument="16" Value="15"/>
+                        <dxc:SeriesPoint Argument="17" Value="11"/>
+                        <dxc:SeriesPoint Argument="18" Value="8.3"/>
+                        <dxc:SeriesPoint Argument="19" Value="6.7"/>
+                        <dxc:SeriesPoint Argument="20" Value="5"/>
+                        <dxc:SeriesPoint Argument="21" Value="6"/>
+                        <dxc:SeriesPoint Argument="22" Value="7.9"/>
+                        <dxc:SeriesPoint Argument="23" Value="10"/>
+                    </dxc:AreaStackedSeries2D>
+                    <dxc:LineSeries2D DisplayName="系列 2">
+                        <dxc:SeriesPoint Argument="1" Value="6.5"/>
+                        <dxc:SeriesPoint Argument="2" Value="5.5"/>
+                        <dxc:SeriesPoint Argument="3" Value="6"/>
+                        <dxc:SeriesPoint Argument="4" Value="7"/>
+                        <dxc:SeriesPoint Argument="5" Value="18.5"/>
+                        <dxc:SeriesPoint Argument="6" Value="12"/>
+                        <dxc:SeriesPoint Argument="7" Value="15"/>
+                        <dxc:SeriesPoint Argument="8" Value="14"/>
+                        <dxc:SeriesPoint Argument="9" Value="17"/>
+                        <dxc:SeriesPoint Argument="10" Value="11"/>
+                        <dxc:SeriesPoint Argument="11" Value="8"/>
+                        <dxc:SeriesPoint Argument="12" Value="17"/>
+                        <dxc:SeriesPoint Argument="13" Value="12"/>
+                        <dxc:SeriesPoint Argument="14" Value="13"/>
+                        <dxc:SeriesPoint Argument="15" Value="12"/>
+                        <dxc:SeriesPoint Argument="16" Value="12"/>
+                        <dxc:SeriesPoint Argument="17" Value="11"/>
+                        <dxc:SeriesPoint Argument="18" Value="10"/>
+                        <dxc:SeriesPoint Argument="19" Value="9"/>
+                        <dxc:SeriesPoint Argument="20" Value="8"/>
+                        <dxc:SeriesPoint Argument="21" Value="8.2"/>
+                        <dxc:SeriesPoint Argument="22" Value="8.4"/>
+                        <dxc:SeriesPoint Argument="23" Value="8.6"/>
+                    </dxc:LineSeries2D>
+                </dxc:XYDiagram2D>
+            </dxc:ChartControl>
+            <dxc:ChartControl Canvas.Left="399" Canvas.Top="159" Height="89" Background="{x:Null}" Width="138">
+                <dxc:ChartControl.Legend>
+                    <dxc:Legend Visible="False"/>
+                </dxc:ChartControl.Legend>
+                <dxc:XYDiagram2D Margin="0,0,0,-22" Width="117" >
+                    <dxc:XYDiagram2D.DefaultPane>
+                        <dxc:Pane DomainBrush="{x:Null}"/>
+                    </dxc:XYDiagram2D.DefaultPane>
+                    <dxc:BarSideBySideSeries2D DisplayName="系列 2" Brush="#FF1B8CEA">
+                        <dxc:SeriesPoint Argument="1" Value="5"/>
+                        <dxc:SeriesPoint Argument="2" Value="7"/>
+                        <dxc:SeriesPoint Argument="3" Value="4"/>
+                        <dxc:SeriesPoint Argument="4" Value="8"/>
+                        <dxc:SeriesPoint Argument="5" Value="2"/>
+                        <dxc:SeriesPoint Argument="6" Value="9"/>
+                        <dxc:SeriesPoint Argument="7" Value="6"/>
+                        <dxc:SeriesPoint Argument="8" Value="5"/>
+                        <dxc:SeriesPoint Argument="9" Value="9.4"/>
+                        <dxc:SeriesPoint Argument="10" Value="10.8"/>
+                        <dxc:SeriesPoint Argument="11" Value="4.8"/>
+                        <dxc:SeriesPoint Argument="12" Value="3"/>
+                        <dxc:SeriesPoint Argument="13" Value="2.7"/>
+                        <dxc:SeriesPoint Argument="14" Value="11"/>
+                        <dxc:SeriesPoint Argument="15" Value="13"/>
+                        <dxc:SeriesPoint Argument="16" Value="15"/>
+                        <dxc:SeriesPoint Argument="17" Value="11"/>
+                        <dxc:SeriesPoint Argument="18" Value="8.3"/>
+                        <dxc:SeriesPoint Argument="19" Value="6.7"/>
+                    </dxc:BarSideBySideSeries2D>
+                </dxc:XYDiagram2D>
+            </dxc:ChartControl>
+        </Canvas>
+    </Viewbox>
+
+
+
+</Window>
